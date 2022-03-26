@@ -1,0 +1,148 @@
+@font-face{
+	font-family:CenturyGothic;
+	src:url("./assets/CenturyGothic.ttf");
+}
+
+body{
+	background-color:rgb(35,35,35);
+	font-family:CenturyGothic;
+	-webkit-user-select:none;
+	touch-action:pan-x pan-y;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	overflow-x:hidden;
+	user-select:none;
+}
+
+#bg{
+	position:fixed;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:100%;
+	background:linear-gradient(300deg,rgba(255,62,62,1)0%,rgba(193,78,174,1)50%,rgba(46,239,255,1)100%);
+	background-repeat:no-repeat;
+}
+
+#titleIcon{
+	position:absolute;
+	left:2%;
+	top:5%;
+	width:5%;
+	height:auto;
+}
+
+#titleName{
+	position:absolute;
+	left:8%;
+	top:5%;
+	width:50%;
+	font-size:8vh;
+	color:white;
+}
+
+#coolProjects{
+	position:absolute;
+	top:90%;
+	left:2.5%;
+	width:95%;
+	background-color:rgb(230,230,230);
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+}
+
+.sitePreviewThingy{
+	position:relative;
+	left:2.5%;
+	width:95%;
+	height:375px;
+	border-radius:15px;
+	background-color:rgb(40,40,40);
+}
+
+.spImage{
+	overflow:hidden;
+	border-radius:10px;
+	border-style:solid;
+	border-width:2px;
+	border-color:rgb(0,0,0);
+	position:absolute;
+	top:5%;
+	left:1%;
+	width:auto;
+	height:90%;
+}
+
+.spContent{
+	position:absolute;
+	left:37.5%;
+	top:7.5%;
+	width:50%;
+	height:85%;
+	color:white;
+}
+
+.openProject{
+	transition:all 500ms;
+	cursor:pointer;
+	position:absolute;
+	top:87%;
+	height:12%;
+	left:0%;
+	width:40%;
+	font-size:1.2vw;
+	border-radius:7.5px;
+	border-style:solid;
+	border-width:1px;
+	border-color:rgb(0,0,0);
+	background-color:rgb(0,120,255);
+}
+
+.openProject:hover{
+	transition:all 500ms;
+	background-color:rgb(45,140,255);
+}
+
+.centerText{
+	cursor:inherit;
+	position:absolute;
+	top:50%;
+	left:0%;
+	width:100%;
+	text-align:center;
+	transform:translate(0%,-50%);
+}
+
+#newsStory{
+	position:absolute;
+	left:5%;
+	top:25%;
+	width:75%;
+	height:50%;
+	border-radius:8px;
+	background-color:rgb(220, 220, 220);
+}
+
+#discord{
+	transition:all 500ms;
+	position:absolute;
+	left:82.5%;
+	top:25%;
+	width:5%;
+	height:auto;
+}
+
+#discord:hover{
+	transition:all 500ms;
+	animation: rotateThingy 500ms ease-in-out 0s 1 normal none;
+}
+
+@keyframes rotateThingy{
+	0%{
+		transform:translate(0%,0%);
+	}50%{
+		transform:translate(0%,-10%);
+	}100%{
+		transform:translate(0%,0%);
+	}
+}
